@@ -1,0 +1,51 @@
+.navbar h2 {
+  font-size: 32px;
+}
+
+.nav-icon .MuiSvgIcon-root {
+  font-size: 45px;
+}
+
+.navbar .MuiButtonBase-root {
+  border: 1px solid #727272;
+}
+
+.navbar .MuiButtonBase-root p {
+  margin: 0 0.7rem;
+  font-family: "McLaren", sans-serif, cursive;
+  text-transform: capitalize;
+  color: #f9eae6;
+}
+
+@media screen and (width <= 554px) {
+  .navbar h2 {
+    font-size: 22px;
+  }
+
+  .navbar .MuiSvgIcon-root {
+    font-size: 30px;
+  }
+
+  .navbar .MuiButtonBase-root p {
+    display: none;
+  }
+}
+
+@media screen and (width <= 310px) {
+  .navbar h2 {
+    font-size: 17px;
+  }
+
+  .navbar .MuiSvgIcon-root {
+    font-size: 28px;
+  }
+
+  .navbar .MuiButtonBase-root {
+    width: auto;
+    border: 1px solid #727272;
+  }
+
+  .navbar .MuiButtonBase-root p {
+    display: none;
+  }
+}

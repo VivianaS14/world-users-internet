@@ -1,0 +1,63 @@
+import { useState } from "react";
+import { Button, Divider, Grid, Menu, MenuItem } from "@mui/material";
+import { PublicRounded, Widgets } from "@mui/icons-material";
+import { teal } from "@mui/material/colors";
+import "./Navbar.css";
+
+const colorWorld = teal[300];
+
+export const Navbar = () => {
+  const [anchorEl, setAnchorEl] = useState(null);
+  const open = Boolean(anchorEl);
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
+  return (
+    <div className="navbar">
+      <Grid
+        container
+        columns={{ xs: 6, sm: 6, md: 6 }}
+        direction="row"
+        justifyContent="center"
+        alignItems="center"
+        paddingY={3}
+      >
+        <Grid item xs={1} textAlign={"center"} className="nav-icon">
+          <PublicRounded fontSize="large" sx={{ color: colorWorld }} />
+        </Grid>
+        <Grid item xs={3} alignItems={"center"}>
+          <h2>The Internet</h2>
+        </Grid>
+        <Grid item xs={1} alignItems={"center"} className="menu-section">
+          <Button
+            id="menu-button"
+            aria-controls={open ? "menu" : undefined}
+            aria-haspopup="true"
+            aria-expanded={open ? "true" : undefined}
+            onClick={handleClick}
+          >
+            <p>Menu</p>
+            <Widgets sx={{ color: "#f9eae6" }} />
+          </Button>
+          <Menu
+            id="menu"
+            aria-labelledby="menu-button"
+            anchorEl={anchorEl}
+            open={open}
+            onClose={handleClose}
+          >
+            <MenuItem onClick={handleClose}>Year</MenuItem>
+            <MenuItem onClick={handleClose}>Country</MenuItem>
+            <MenuItem onClick={handleClose}>Top 10</MenuItem>
+            <Divider />
+            <MenuItem onClick={handleClose}>World Map</MenuItem>
+          </Menu>
+        </Grid>
+      </Grid>
+    </div>
+  );
+};
