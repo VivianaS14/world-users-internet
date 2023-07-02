@@ -1,0 +1,18 @@
+.usersxyear {
+  padding: 1rem 0 5rem 0;
+}
+
+.usersxyear h3 {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 4rem 0;
+}
+
+@media screen and (width <= 554px) {
+  .usersxyear h3 {
+    margin: 1rem 0;
+  }
+}
+
+@media screen and (width <= 310px) {
+}
