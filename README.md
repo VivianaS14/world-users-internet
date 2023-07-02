@@ -23,7 +23,7 @@ Main objective of this challenge is to create, develop and build a high quality 
 
 ### Task 1: Displaying charts:
 
-- ❌ Setup development environment and implement Backend connection. Attention! Read the documentation on the github repository provided in the Associated Content section in order to setup the development environment and know which endpoints are available, what they return and everything related to it.
+- ✅ Setup development environment and implement Backend connection. Attention! Read the documentation on the github repository provided in the Associated Content section in order to setup the development environment and know which endpoints are available, what they return and everything related to it.
 
 - ❌ Create and implement chart displaying Internet Users x Year. The chart displays how many Internet Users could access the Internet per Year. The type of chart is at participant's will.
 
