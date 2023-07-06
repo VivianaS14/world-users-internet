@@ -1,0 +1,62 @@
+[
+  {
+    "id": "css",
+    "label": "css",
+    "value": 404,
+    "color": "hsl(133, 70%, 50%)"
+  },
+  {
+    "id": "elixir",
+    "label": "elixir",
+    "value": 70,
+    "color": "hsl(276, 70%, 50%)"
+  },
+  {
+    "id": "ruby",
+    "label": "ruby",
+    "value": 225,
+    "color": "hsl(51, 70%, 50%)"
+  },
+  {
+    "id": "python",
+    "label": "python",
+    "value": 25,
+    "color": "hsl(93, 70%, 50%)"
+  },
+  {
+    "id": "php",
+    "label": "php",
+    "value": 214,
+    "color": "hsl(311, 70%, 50%)"
+  },
+  {
+    "id": "go",
+    "label": "go",
+    "value": 214,
+    "color": "hsl(311, 70%, 50%)"
+  },
+  {
+    "id": "dart",
+    "label": "dart",
+    "value": 120,
+    "color": "hsl(93, 70%, 50%)"
+  },
+  {
+    "id": "rust",
+    "label": "rust",
+    "value": 70,
+    "color": "hsl(276, 70%, 50%)"
+  },
+  {
+    "id": "otro",
+    "label": "otro",
+    "value": 404,
+    "color": "hsl(133, 70%, 50%)"
+  },
+  {
+    "id": "otro2",
+    "label": "otro2",
+    "value": 404,
+    "color": "hsl(133, 70%, 50%)"
+  }
+]
