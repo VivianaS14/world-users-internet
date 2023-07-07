@@ -10,6 +10,8 @@ import {
 import { ResponsivePie } from "@nivo/pie";
 import { useUsersXYear } from "../../hooks/useUsersXYear";
 import { formatValue } from "../../utils/formatValue";
+import { Loader } from "../../containers/Loader/Loader";
+import { Error } from "../../containers/Error/Error";
 import "./UsersXYear.css";
 
 export const UsersXYear = () => {
@@ -89,42 +91,9 @@ export const UsersXYear = () => {
             }}
           >
             {loading ? (
-              <Box
-                sx={{
-                  width: "100%",
-                  height: "100%",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                }}
-              >
-                <div className="loader">
-                  <div className="bar1"></div>
-                  <div className="bar2"></div>
-                  <div className="bar3"></div>
-                  <div className="bar4"></div>
-                  <div className="bar5"></div>
-                  <div className="bar6"></div>
-                  <div className="bar7"></div>
-                  <div className="bar8"></div>
-                  <div className="bar9"></div>
-                  <div className="bar10"></div>
-                  <div className="bar11"></div>
-                  <div className="bar12"></div>
-                </div>
-              </Box>
+              <Loader />
             ) : error ? (
-              <Box
-                sx={{
-                  width: "100%",
-                  height: "100%",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                }}
-              >
-                <p style={{ color: "#F53844" }}>{error}</p>
-              </Box>
+              <Error message={error} />
             ) : (
               <ResponsivePie
                 data={data || []}
