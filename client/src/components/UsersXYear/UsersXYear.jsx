@@ -57,7 +57,7 @@ export const UsersXYear = () => {
   );
 
   const [yearsSelected, setYearsSelected] = useState(0);
-  const { getUsersXYear, data, loading } = useUsersXYear();
+  const { getUsersXYear, data, loading, error } = useUsersXYear();
 
   const handleChange = (event) => {
     setYearsSelected(event.target.value);
@@ -85,10 +85,46 @@ export const UsersXYear = () => {
               height: "700px",
               margin: "auto",
               boxSizing: "border-box",
+              textAlign: "center",
             }}
           >
             {loading ? (
-              <p>Loading...</p>
+              <Box
+                sx={{
+                  width: "100%",
+                  height: "100%",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <div className="loader">
+                  <div className="bar1"></div>
+                  <div className="bar2"></div>
+                  <div className="bar3"></div>
+                  <div className="bar4"></div>
+                  <div className="bar5"></div>
+                  <div className="bar6"></div>
+                  <div className="bar7"></div>
+                  <div className="bar8"></div>
+                  <div className="bar9"></div>
+                  <div className="bar10"></div>
+                  <div className="bar11"></div>
+                  <div className="bar12"></div>
+                </div>
+              </Box>
+            ) : error ? (
+              <Box
+                sx={{
+                  width: "100%",
+                  height: "100%",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <p style={{ color: "#F53844" }}>{error}</p>
+              </Box>
             ) : (
               <ResponsivePie
                 data={data || []}
