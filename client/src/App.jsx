@@ -1,4 +1,4 @@
-import { Navbar, UsersXCountry, UsersXYear } from "./components";
+import { Navbar, TopCountries, UsersXCountry, UsersXYear } from "./components";
 
 const App = () => {
   return (
@@ -6,6 +6,7 @@ const App = () => {
       <Navbar />
       <UsersXYear />
       <UsersXCountry />
+      <TopCountries />
     </div>
   );
 };

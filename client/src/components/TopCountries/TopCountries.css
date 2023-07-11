@@ -1,0 +1,48 @@
+.TopCountries {
+  margin: 3rem;
+  padding: 1rem 0 1rem 0;
+  background: #181818;
+  border: 2px solid #fff;
+  box-shadow: 4px 4px #fff;
+  border-radius: 10px;
+}
+
+.TopCountries h3 {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 4rem 0;
+}
+
+.TopCountries .MuiFormControl-root .MuiFormLabel-root {
+  color: #f9eae6;
+}
+
+.TopCountries .MuiInputBase-root {
+  color: #f9eae6;
+}
+
+.TopCountries .MuiSvgIcon-root {
+  color: #f9eae6;
+}
+
+.TopCountries .MuiOutlinedInput-notchedOutline {
+  border-color: #f9eae6;
+}
+
+.MuiList-root {
+  background-color: #181818;
+  color: #f9eae6;
+}
+
+.TopCountries .MuiChip-root {
+  background-color: #eee;
+}
+
+@media screen and (width <= 554px) {
+  .TopCountries h3 {
+    margin: 1rem 0;
+  }
+}
+
+@media screen and (width <= 310px) {
+}
