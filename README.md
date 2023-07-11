@@ -27,7 +27,7 @@ Main objective of this challenge is to create, develop and build a high quality 
 
 - ✅ Create and implement chart displaying Internet Users x Year. The chart displays how many Internet Users could access the Internet per Year. The type of chart is at participant's will.
 
-- ❌ Create and implement chart displaying Internet Users x Year x Country. The chart displays how many Internet Users each specific Country could access the Internet per Year. The user should have the ability to change the Country or Year at any time. The type of chart and how to change an axis is at participant's will.
+- ✅ Create and implement chart displaying Internet Users x Year x Country. The chart displays how many Internet Users each specific Country could access the Internet per Year. The user should have the ability to change the Country or Year at any time. The type of chart and how to change an axis is at participant's will.
 
 - ❌ Create and implement last chart displaying Top 10 Countries with the largest number of internet user per Year.
 
