@@ -22,7 +22,7 @@ export const UsersXCountry = () => {
     useCountries();
   const { getUsersXCountry, data, error, loading } = useUsersXCountry();
 
-  const [countryName, setCountryName] = useState("");
+  const [countryName, setCountryName] = useState("Colombia");
   const [yearsList, setYearsList] = useState(["2000", "2020"]);
 
   const handleChangeCountry = (event) => {
