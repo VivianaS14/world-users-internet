@@ -169,8 +169,6 @@ export const UsersXCountry = () => {
           <Error message={error} />
         ) : (
           <>
-            <h4>Country: {countryName}</h4>
-            <p> Internet Users for years: {yearsList.join(" - ")} </p>
             <ResponsiveBar
               data={data}
               keys={yearsList}
