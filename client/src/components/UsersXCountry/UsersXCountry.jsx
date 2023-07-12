@@ -100,11 +100,13 @@ export const UsersXCountry = () => {
                   </Box>
                 )}
               >
-                {years.map((year, i) => (
-                  <MenuItem key={i} value={year}>
-                    {year}
-                  </MenuItem>
-                ))}
+                {years
+                  .filter((y) => y > 1989)
+                  .map((y, i) => (
+                    <MenuItem key={i} value={y}>
+                      {y}
+                    </MenuItem>
+                  ))}
               </Select>
             </FormControl>
           </Box>
