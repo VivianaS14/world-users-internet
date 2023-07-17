@@ -1,3 +1,12 @@
+.navbar {
+  margin: 3rem;
+  padding: 1rem 0 1rem 0;
+  background: #181818;
+  border: 2px solid #fff;
+  box-shadow: 4px 4px #fff;
+  border-radius: 10px;
+}
+
 .navbar h2 {
   font-size: 32px;
 }

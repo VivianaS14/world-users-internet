@@ -1,17 +1,17 @@
 import { useState } from "react";
 import { Button, Divider, Grid, Menu, MenuItem } from "@mui/material";
-import { PublicRounded, Widgets } from "@mui/icons-material";
-import { teal } from "@mui/material/colors";
+import { Widgets } from "@mui/icons-material";
+import FluffImage from "../../assets/Fluff1.png";
 import "./Navbar.css";
-
-const colorWorld = teal[300];
 
 export const Navbar = () => {
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
+
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
+
   const handleClose = () => {
     setAnchorEl(null);
   };
@@ -27,7 +27,7 @@ export const Navbar = () => {
         paddingY={3}
       >
         <Grid item xs={1} textAlign={"center"} className="nav-icon">
-          <PublicRounded fontSize="large" sx={{ color: colorWorld }} />
+          <img src={FluffImage} alt="Fluff Logo" width={100} />
         </Grid>
         <Grid item xs={3} alignItems={"center"}>
           <h2>The Internet</h2>
