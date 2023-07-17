@@ -71,7 +71,7 @@ export const UsersXYear = () => {
   }, [getUsersXYear, years]);
 
   return (
-    <div className="usersxyear">
+    <div className="usersxyear" id="UsersXYear">
       <h3>Internet Users Per Year</h3>
 
       <Grid

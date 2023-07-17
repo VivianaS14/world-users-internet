@@ -50,9 +50,15 @@ export const Navbar = () => {
             open={open}
             onClose={handleClose}
           >
-            <MenuItem onClick={handleClose}>Year</MenuItem>
-            <MenuItem onClick={handleClose}>Country</MenuItem>
-            <MenuItem onClick={handleClose}>Top 10</MenuItem>
+            <MenuItem onClick={handleClose}>
+              <a href="#UsersXYear">Year</a>
+            </MenuItem>
+            <MenuItem onClick={handleClose}>
+              <a href="#UsersXCountry">Country</a>
+            </MenuItem>
+            <MenuItem onClick={handleClose}>
+              <a href="#TopCountries">Top 10</a>
+            </MenuItem>
             <Divider />
             <MenuItem onClick={handleClose}>World Map</MenuItem>
           </Menu>

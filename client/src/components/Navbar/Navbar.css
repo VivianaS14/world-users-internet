@@ -11,6 +11,11 @@
   font-size: 32px;
 }
 
+a {
+  text-decoration: none;
+  color: #f9eae6;
+}
+
 .nav-icon .MuiSvgIcon-root {
   font-size: 45px;
 }

@@ -29,7 +29,7 @@ export const TopCountries = () => {
   }, [getCountries, year]);
 
   return (
-    <div className="TopCountries">
+    <div className="TopCountries" id="TopCountries">
       <h3>TopCountries</h3>
 
       <Grid

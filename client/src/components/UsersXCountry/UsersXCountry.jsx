@@ -45,7 +45,7 @@ export const UsersXCountry = () => {
   }, [countryName, getUsersXCountry, yearsList]);
 
   return (
-    <div className="UsersXCountry">
+    <div className="UsersXCountry" id="UsersXCountry">
       <h3>UsersXCountry</h3>
 
       <Grid
